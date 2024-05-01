@@ -121,6 +121,9 @@ p {
 ul{
     list-style-type:square;
 }
+img{
+    margin: 0 auto;
+}
 li::marker {
     color: #fd5523;
     font-size: 0.3em;
