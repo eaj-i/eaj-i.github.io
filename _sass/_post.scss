@@ -59,6 +59,11 @@
         // }
     }
 }
+
+img{
+    max-width: 300px;
+    text-align: center;
+}
 @media screen and (max-width: 770px) {
     .page[post] {
         .left {
