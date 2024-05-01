@@ -111,11 +111,16 @@ table {
     td {
         padding: 2px 10px;
     }
+    align-items: center;
+    margin: 0 auto;
 }
 p {
     margin: 0 0 14px;
 }
-
+img{
+    text-align: center;
+    margin: 0 auto;
+}
 ul{
     list-style-type:square;
 }
