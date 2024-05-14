@@ -9,7 +9,7 @@ tags:
 ---
 * content
 {: toc}
-
+```
 {% plantuml %}
 @startuml
 class first_half{
@@ -19,7 +19,7 @@ total_order : int
 }
 @enduml
 {% endplantuml %}
-
+```
 
 
 
