@@ -10,12 +10,17 @@ tags:
 {: toc}
 
 ::uml:: format="png"
+
+```
+{% plantuml %}
 class first_half{
 shipment_id : int
 flavor : varchar
 total_order : int
 }
-::end-uml::
+{% endplantuml %}
+```
+
 
 
 
