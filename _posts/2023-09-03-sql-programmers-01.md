@@ -61,3 +61,6 @@ from first_half F join icecream_info I
 on F.flavor = I.flavor
 group by I.ingredient_type;
 ```
+
+
+# lv4. 주문량이 많은 아이스크림들 조회하기
