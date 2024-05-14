@@ -10,21 +10,20 @@ tags:
 {: toc}
 
 
-{% plantuml %}
+```plantuml format="png"
 class first_half{
 shipment_id : int
 flavor : varchar
 total_order : int
 }
-{% endplantuml %}
-
+```
 
 
 
 
 
 ```sql
-# 인기있는 아이스크림
+-- 인기있는 아이스크림
 
 SELECT flavor
 from first_half
