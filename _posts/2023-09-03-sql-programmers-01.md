@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: Database
-title: "[DB] programmmers 문제풀이 - 아이스크림 가게 관련"
+title: "[DB] programmmers 문제풀이 - icecream shop"
 date: 2023-09-02
 permalink: /database/programmers/01
 tags:
@@ -9,6 +9,7 @@ tags:
 ---
 * content
 {: toc}
+
 ```
 {% plantuml %}
 @startuml
@@ -27,7 +28,6 @@ total_order : int
 # lv1. 인기있는 아이스크림
 상반기에 판매된 아이스크림의 맛을 총주문량을 기준으로 내림차순 정렬하고 총주문량이 같다면 출하 번호를 기준으로 오름차순 정렬
 
-
 ```sql
 SELECT flavor
 from first_half
@@ -40,14 +40,13 @@ order by total_order desc, shipment_id;
 상반기 아이스크림 총주문량이 3,000보다 높으면서 아이스크림의 주 성분이 과일인 아이스크림의 맛을 총주문량이 큰 순서대로 조회
 
 ```sql
-
 SELECT flavor
 from first_half
 where total_order>=3000
-  and flavor in
-    (select flavor
-    from icecream_info
-    where ingredient_type='fruit_based')
+and flavor in
+(select flavor
+from icecream_info
+where ingredient_type='fruit_based')
 order by total_order desc;
 
 ```
