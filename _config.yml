@@ -33,9 +33,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
-# port
-# port: 1234
+  syntax_highlighter_opts:
+    block:
+      plantuml: _includes/plantuml.html
 
 # url
 category_dir: category/
