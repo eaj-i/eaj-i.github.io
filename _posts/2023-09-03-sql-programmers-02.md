@@ -1,13 +1,15 @@
 ---
 layout: post
 categories: Database
-title: "[DB] programmmers 문제풀이 - 아이스크림 가게 관련"
+title: "[DB] programmmers 문제풀이 - animal shelter"
 date: 2023-09-06
 permalink: /database/programmers/02
 tags:
 ---
 * content
 {: toc}
+
+
 
 
 
