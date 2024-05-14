@@ -5,32 +5,35 @@ title: "[DB] programmmers 문제풀이 - 아이스크림 가게 관련"
 date: 2023-09-02
 permalink: /database/programmers/01
 tags:
+  - programmers
 ---
 * content
 {: toc}
 
 
-{% plantuml %}
+```plantuml format="png"
 class first_half{
-	shipment_id : int
-	flavor : varchar
-	total_order : int
+shipment_id : int
+flavor : varchar
+total_order : int
 }
-{% endplantuml %}
+```
 
-
-
+# lv1. 인기있는 아이스크림
+상반기에 판매된 아이스크림의 맛을 총주문량을 기준으로 내림차순 정렬하고 총주문량이 같다면 출하 번호를 기준으로 오름차순 정렬
 
 
 ```sql
--- 인기있는 아이스크림
-
 SELECT flavor
 from first_half
 order by total_order desc, shipment_id;
 
-  
---과일로 만든 아이스크림 고르기
+ ```
+
+
+# lv1. 과일로 만든 아이스크림 고르기
+상반기 아이스크림 총주문량이 3,000보다 높으면서 아이스크림의 주 성분이 과일인 아이스크림의 맛을 총주문량이 큰 순서대로 조회
+```sql
 
 SELECT flavor
 from first_half
@@ -41,9 +44,13 @@ where total_order>=3000
     where ingredient_type='fruit_based')
 order by total_order desc;
 
-  
+```
 
--- 성분으로 구분한 아이스크림 총 주문량
+
+# lv2. 성분으로 구분한 아이스크림 총 주문량
+상반기 동안 각 아이스크림 성분 타입과 성분 타입에 대한 아이스크림의 총주문량을 총주문량이 작은 순서대로 조회
+
+```sql
 SELECT I.ingredient_type, sum(F.total_order) as total_order
 from first_half F join icecream_info I
 on F.flavor = I.flavor
