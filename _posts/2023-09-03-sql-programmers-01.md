@@ -10,18 +10,6 @@ tags:
 * content
 {: toc}
 
-```
-{% plantuml %}
-@startuml
-class first_half{
-shipment_id : int
-flavor : varchar
-total_order : int
-}
-@enduml
-{% endplantuml %}
-```
-
 
 
 
