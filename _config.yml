@@ -49,3 +49,15 @@ paginate: 5
 plugins:
   - jekyll-paginate
   - jekyll-plantuml
+
+  collections:
+    database:
+      output: true
+    javascript:
+      output: true
+    python:
+      output: true
+    java:
+      output: true
+    computerscience:
+      output: true
