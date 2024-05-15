@@ -10,14 +10,7 @@ tags:
 * content
 {: toc}
 
-```mermaid
-classDiagram
-class first_half{
-    +int shipment
-    +varchar flavor
-    +int total_order
-  }
-```
+![](../uml/ea060f76ac807f48b1bf41fb500d7e1c.uml)
 
 
 
