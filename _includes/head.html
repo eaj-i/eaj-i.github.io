@@ -45,4 +45,8 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   {% endif %}
+
+  {% if page.mermaid %}
+  {% include mermaid.html %}
+  {% endif %}
 </head>
