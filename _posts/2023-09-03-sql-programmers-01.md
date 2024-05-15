@@ -10,14 +10,14 @@ tags:
 * content
 {: toc}
 
-<div class="mermaid">
+```mermaid
 classDiagram
 class first_half{
-    int shipment
-    varchar flavor
-    int total_order
+    +int shipment
+    +varchar flavor
+    +int total_order
   }
-<div>
+```
 
 
 
