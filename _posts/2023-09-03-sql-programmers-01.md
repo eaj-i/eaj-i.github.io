@@ -4,7 +4,6 @@ categories: Database
 title: "[DB] programmmers 문제풀이 - icecream shop"
 date: 2023-09-02
 permalink: /database/programmers/01
-mermaid: true
 tags:
   - programmers
 ---
@@ -12,16 +11,14 @@ tags:
 {: toc}
 
 
-
 ```mermaid
 classDiagram
-  first_half{
-    int shipment
-    varchar flavor
-    int total_order
-  }
+class first_half{
+            +int shipment    
+            +varchar flavor
+            +int total_order
+        }
 ```
-
 
 
 # lv1. 인기있는 아이스크림
