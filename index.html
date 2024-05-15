@@ -4,7 +4,6 @@ layout: default
 
 <div class="page clearfix" index>
   <div class="left">
-    <hr>
     <ul>
       {% for post in paginator.posts %}
       <li>
@@ -43,6 +42,7 @@ layout: default
     </ul>
 
 
+
     <!-- Pagination links -->
     <div class="pagination">
       {% if paginator.previous_page %}
@@ -53,14 +53,7 @@ layout: default
       <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
       <span class="previous disable"><i class="fa fa-angle-left"></i></span>
       {% endif %}
-      {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-      <span class="page_number current">{{ page }}</span>
-      {% else %}
-      <a href="{{ site.baseurl }}{% if page == 1 %}/index.html{% else %}/page{{ page }}{% endif %}"
-        class="page_number">{{ page }}</a>
-      {% endif %}
-      {% endfor %}
+      <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
       {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
       <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i
@@ -130,18 +123,3 @@ layout: default
             {% endfor %}
         </div>
       </div>
-
-      <!-- <div class="side">
-                <div>
-                    <i class="fa fa-external-link"></i>
-                    Links
-                </div>
-                <ul  class="content-ul">
-
-                </ul>
-            </div> -->
-    </div>
-  </div>
-</div>
-<!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
-<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
