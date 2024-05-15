@@ -1,14 +1,17 @@
 <div class="post-recent">
     <div class="pre">
-        {% if page.previous %}
-        <p><strong>Prev</strong> <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
+        {% assign previous_in_category = site.posts | where: "categories", page.categories | last | previous: page %}
+        {% if previous_in_category %}
+        <p><strong>Prev</strong> <a href="{{ previous_in_category.url | prepend: site.baseurl }}">{{
+                previous_in_category.title }}</a>
         </p>
         {% endif %}
     </div>
     <div class="nex">
-
-        {% if page.next %}
-        <p><strong>Next</strong> <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></p>
+        {% assign next_in_category = site.posts | where: "categories", page.categories | last | next: page %}
+        {% if next_in_category %}
+        <p><strong>Next</strong> <a href="{{ next_in_category.url | prepend: site.baseurl }}">{{ next_in_category.title
+                }}</a></p>
         {% endif %}
     </div>
 </div>
