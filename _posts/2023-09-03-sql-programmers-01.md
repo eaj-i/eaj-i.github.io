@@ -10,15 +10,15 @@ tags:
 * content
 {: toc}
 
-
-```mermaid
+<div class="mermaid">
 classDiagram
 class first_half{
-            +int shipment    
-            +varchar flavor
-            +int total_order
-        }
-```
+    int shipment
+    varchar flavor
+    int total_order
+  }
+<div>
+
 
 
 # lv1. 인기있는 아이스크림
