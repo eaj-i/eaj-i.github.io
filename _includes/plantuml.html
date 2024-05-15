@@ -1,6 +1,0 @@
-{% assign plantuml_code = include.content %}
-{% assign plantuml_url = 'http://www.plantuml.com/plantuml/svg/' | append: plantuml_code | uri_escape %}
-
-<object data="{{ plantuml_url }}" type="image/svg+xml">
-  <img src="{{ plantuml_url }}" alt="diagram">
-</object>

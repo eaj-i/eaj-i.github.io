@@ -33,9 +33,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      plantuml: _includes/plantuml.html
+
 
 # url
 category_dir: category/
