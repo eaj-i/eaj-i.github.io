@@ -44,8 +44,13 @@ excerpt_separator: "\n\n\n\n"
 
 # paginate
 
-paginate: 5
+paginate: 10
 
 plugins:
   - jekyll-paginate
   - jekyll-plantuml
+
+
+collections:
+  categories:
+    output: true
