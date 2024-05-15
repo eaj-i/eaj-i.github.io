@@ -5,5 +5,4 @@ class first_half{
 	flavor : varchar
 	total_order : int
 }
-1. 
 @enduml
