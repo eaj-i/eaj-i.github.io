@@ -1,8 +1,5 @@
----
-layout: default
----
-
 <div class="page clearfix" index>
+  <!-- Content -->
   <div class="left">
     <hr>
     <ul>
@@ -11,26 +8,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <div class="label">
-          <div class="label-card">
-            <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
-          </div>
-          <div class="label-card">
-            {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
-            {% endif %}
-          </div>
-          <div class="label-card">
-            {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }} {% endif %}
-          </div>
-
-          <div class="label-card">
-            {% include category.html %}
-          </div>
-
-          <div class="label-card">
-            {% include tag.html %}
-          </div>
-        </div>
+        <!-- 포스트 내용 등 표시 -->
         <div class="excerpt">
           {{post.excerpt}}
         </div>
@@ -41,7 +19,6 @@ layout: default
       </li>
       {% endfor %}
     </ul>
-
 
     <!-- Pagination links -->
     <div class="pagination">
@@ -71,7 +48,7 @@ layout: default
       {% endif %}
     </div>
   </div>
-  <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+
   <div class="right">
     <div class="wrap">
       <div class="side">
@@ -86,7 +63,7 @@ layout: default
         </ul>
       </div>
 
-      <!-- Content -->
+      <!-- Categories -->
       <div class="side ">
         <div>
           <i class="fa fa-th-list"></i>
@@ -106,7 +83,8 @@ layout: default
           {% endfor %}
         </ul>
       </div>
-      <!-- 其他div框放到这里 -->
+
+      <!-- Tags -->
       <div class="side">
         <div>
           <i class="fa fa-tags"></i>
@@ -130,18 +108,6 @@ layout: default
             {% endfor %}
         </div>
       </div>
-
-      <!-- <div class="side">
-                <div>
-                    <i class="fa fa-external-link"></i>
-                    Links
-                </div>
-                <ul  class="content-ul">
-
-                </ul>
-            </div> -->
     </div>
   </div>
 </div>
-<!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
-<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
