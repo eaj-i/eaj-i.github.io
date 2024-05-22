@@ -12,6 +12,7 @@ tags:
 
 ![](https://www.plantuml.com/plantuml/png/BSnD2eCX30RXjJc5v-ZAcqZm1mDHI_BMJUdTw-9R3WnFSh3XCvMeABl7BkR8WxL_AVYGzsmBMMfyHLcWq9NFjbk7hGms2jXWpTjgisVwKMghNlGF)
 
+<!--more-->
 
 
 # lv1. 인기있는 아이스크림
