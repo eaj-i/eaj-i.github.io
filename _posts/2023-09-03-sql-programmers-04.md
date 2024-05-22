@@ -5,6 +5,7 @@ title: "[DB] programmmers 문제풀이 - car rental company"
 date: 2023-09-09
 permalink: /database/programmers/04
 tags:
+  - programmers
 ---
 * content
 {: toc}

@@ -5,6 +5,7 @@ title: "[DB] programmmers 문제풀이 - animal shelter (1)"
 date: 2023-09-06
 permalink: /database/programmers/02
 tags:
+  - programmers
 ---
 * content
 {: toc}
