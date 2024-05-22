@@ -1,17 +1,26 @@
 <div class="post-recent">
     <div class="pre">
-        {% assign previous_in_category = site.posts | where: "categories", page.categories | last | previous: page %}
-        {% if previous_in_category %}
-        <p><strong>Prev</strong> <a href="{{ previous_in_category.url | prepend: site.baseurl }}">{{
-                previous_in_category.title }}</a>
-        </p>
-        {% endif %}
+        {% assign previous_post = nil %}
+        {% for post in site.posts %}
+        {% if post.categories contains page.categories[0] %}
+        {% if post.date < page.date %} {% assign previous_post=post %} {% else %} {% break %} {% endif %} {% endif %} {%
+            endfor %} {% if previous_post %} <p><strong>Prev</strong> <a
+                href="{{ previous_post.url | prepend: site.baseurl }}">{{ previous_post.title }}</a></p>
+            {% endif %}
     </div>
     <div class="nex">
-        {% assign next_in_category = site.posts | where: "categories", page.categories | last | next: page %}
-        {% if next_in_category %}
-        <p><strong>Next</strong> <a href="{{ next_in_category.url | prepend: site.baseurl }}">{{ next_in_category.title
-                }}</a></p>
+        {% assign next_post = nil %}
+        {% for post in site.posts reversed %}
+        {% if post.categories contains page.categories[0] %}
+        {% if post.date > page.date %}
+        {% assign next_post = post %}
+        {% else %}
+        {% break %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% if next_post %}
+        <p><strong>Next</strong> <a href="{{ next_post.url | prepend: site.baseurl }}">{{ next_post.title }}</a></p>
         {% endif %}
     </div>
 </div>
