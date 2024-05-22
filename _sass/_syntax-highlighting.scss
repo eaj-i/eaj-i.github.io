@@ -27,19 +27,19 @@ pre {
         margin: 0;
         padding: 0;
         font-size: 13px;
-        color: #4f4f4e;
+        color: #0a0a09;
         border: none;
-        background-color: #dde6b2
+        background-color: #e9eae5
     }
 }
 
 .highlight {
     border-radius: 3px;
 
-    background: #272822;
+    background: #e9eae5;
 
     .hll {
-        background-color: #272822;
+        background-color: #e9eae5;
     }
 
     .c {
@@ -48,7 +48,7 @@ pre {
 
     /* Comment */
     .err {
-        color: #960050;
+        color: #9f0055;
         background-color: #1e0010
     }
 
@@ -64,7 +64,7 @@ pre {
 
     /* Literal */
     .n {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name */
@@ -74,7 +74,7 @@ pre {
 
     /* Operator */
     .p {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Punctuation */
@@ -159,7 +159,7 @@ pre {
 
     /* Name.Attribute */
     .nb {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Builtin */
@@ -179,7 +179,7 @@ pre {
 
     /* Name.Decorator */
     .ni {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Entity */
@@ -194,12 +194,12 @@ pre {
 
     /* Name.Function */
     .nl {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Label */
     .nn {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Namespace */
@@ -209,7 +209,7 @@ pre {
 
     /* Name.Other */
     .py {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Property */
@@ -219,7 +219,7 @@ pre {
 
     /* Name.Tag */
     .nv {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Variable */
@@ -229,7 +229,7 @@ pre {
 
     /* Operator.Word */
     .w {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Text.Whitespace */
@@ -309,22 +309,22 @@ pre {
 
     /* Literal.String.Symbol */
     .bp {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Builtin.Pseudo */
     .vc {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Variable.Class */
     .vg {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Variable.Global */
     .vi {
-        color: #f8f8f2
+        color: #585856
     }
 
     /* Name.Variable.Instance */
