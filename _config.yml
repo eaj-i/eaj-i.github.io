@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: eaj-i
+title: Lindz
 brief-intro: IT 초보사전 💦💦
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://eaj-i.github.io" # the base hostname & protocol for your site
